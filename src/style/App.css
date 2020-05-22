@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+div.circle {
+  position: absolute;
+  /* background-color: red; */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(180deg) scale(-1,1);
+}
+div.soldier {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+  
+}
+div.circle div.soliderBox span {
+  /* margin-left: 7px; */
+  display: block;
+  
+  
+}
+div.soldier.dead div.soldierBox {
+  background-color: red;
+}
+div.soldierBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) rotate(180deg) scale(-1,1);
+  border-radius: 100%;
+}
+h1  {
+  font-family: Oswald;
+  text-align: center;
+  color: goldenrod;
+  text-shadow: 0 0 7px goldenrod;
+  font-size: 50px;
+}
+body {
+  background-color: #202020;
+}
+div.menu {
+  border: 3px solid goldenrod;
+  box-shadow: 0 0 5px 2px goldenrod;
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  height: 380px;
+  top: 30%;
+  right: 5%;
+}
+div.menu p {
+  color: goldenrod;
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+div.menu input {
+  width: 30%;
+}
+div.menu button {
+  display: block;
+  margin: 35px auto;
+  width: 120px;
+  height: 60px;
+  background-color: #111;
+  border: 2px solid goldenrod;
+  box-shadow: 0 0 5px 1px goldenrod;
+  color: goldenrod;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .5s ease;
+}
+div.menu button:hover {
+  background-color: goldenrod;
+  color: #111;
+}
+div.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+div.winner p {
+  font-size: 200px;
+  font-family: Roboto;
+  color: goldenrod;
+}
